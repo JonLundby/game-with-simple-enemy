@@ -1,0 +1,49 @@
+body {
+    user-select: none;
+    background-color: dimgray;
+}
+
+#gamefield {
+    background-color:darkcyan;
+    height: 640px;
+    width: 640px;
+    border: 2px solid black;
+}
+
+#player {
+    position: absolute;
+    background-image: url("/Characters/Characters/Character\ 1.png");
+    background-size: 400% 400%;
+    background-position: 300% 100%; /*disse kan manipuleres for a lave animationer*/
+    height: 40px;
+    width: 32px;
+    translate: 0px 0px;
+}
+
+#enemy {
+    position: absolute;
+    background-image: url("/Characters/Characters/Character\ 9.png");
+    background-size: 400% 400%;
+    background-position: 300% 100%; /*disse kan manipuleres for a lave animationer*/
+    height: 40px;
+    width: 32px;
+    translate: 0px 0px;
+}
+
+.collision {
+    animation: collision 0.5s;
+    animation-duration: 180ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes collision {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
