@@ -4,7 +4,7 @@ body {
 }
 
 #gamefield {
-    background-color:darkcyan;
+    background-color: darkcyan;
     height: 640px;
     width: 640px;
     border: 2px solid black;
@@ -12,7 +12,7 @@ body {
 
 #player {
     position: absolute;
-    background-image: url("/Characters/Characters/Character\ 1.png");
+    background-image: url("./Characters/Characters/Character\ 1.png");
     background-size: 400% 400%;
     background-position: 300% 100%; /*disse kan manipuleres for a lave animationer*/
     height: 40px;
@@ -22,7 +22,7 @@ body {
 
 #enemy {
     position: absolute;
-    background-image: url("/Characters/Characters/Character\ 9.png");
+    background-image: url("./Characters/Characters/Character\ 9.png");
     background-size: 400% 400%;
     background-position: 300% 100%; /*disse kan manipuleres for a lave animationer*/
     height: 40px;
